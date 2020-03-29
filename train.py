@@ -70,6 +70,8 @@ def train():
     data_dict = parse_data_cfg(data)
     train_path = data_dict['train']
     test_path = data_dict['valid']
+    print("train path: ", train_path)
+    print("test path: ", test_path)
     nc = 1 if opt.single_cls else int(data_dict['classes'])  # number of classes
 
     # Remove previous results
